@@ -10,7 +10,12 @@
 
 <body>
   <header class="site-header">
-    <div class="top-banner"></div>
+    <div class="top-banner">
+      <div class="top-banner__content">
+        <span>مدل؟ اندازه؟ برند؟</span>
+        <span>یخچال مناسب خودت رو راحت پیدا کن</span>
+      </div>
+    </div>
 
     <div class="header-main">
       <div class="container">
@@ -23,26 +28,31 @@
         </div>
 
         <div class="header-main__left">
+          <button class="icon-btn">🛒</button>
           <button class="login-btn">ورود | ثبت‌نام</button>
-          <button class="cart-btn">سبد</button>
+          <button class="icon-btn">🔔</button>
         </div>
       </div>
     </div>
 
     <div class="header-nav">
       <div class="container">
-        <nav class="main-nav">
-          <button class="menu-btn">دسته‌بندی کالاها</button>
+        <div class="main-nav">
+          <div class="main-nav__right">
+            <button class="menu-btn">دسته‌بندی کالاها ☰</button>
 
-          <ul class="main-nav__list">
-            <li><a href="#">شگفت‌انگیزها</a></li>
-            <li><a href="#">سوپرمارکت</a></li>
-            <li><a href="#">طلای دیجیتال</a></li>
-            <li><a href="#">پرفروش‌ترین‌ها</a></li>
-            <li><a href="#">سوالی دارید؟</a></li>
-            <li><a href="#">در دیجی‌کالا بفروشید!</a></li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list">
+              <li><a href="#">شگفت‌انگیزها</a></li>
+              <li><a href="#">سوپرمارکت</a></li>
+              <li><a href="#">طلای دیجیتال</a></li>
+              <li><a href="#">پرفروش‌ترین‌ها</a></li>
+              <li><a href="#">سوالی دارید؟</a></li>
+              <li><a href="#">در دیجی‌کالا بفروشید!</a></li>
+            </ul>
+          </div>
+
+          <button class="city-btn">شهر خود را انتخاب کنید</button>
+        </div>
       </div>
     </div>
   </header>
@@ -62,6 +72,7 @@
           <div class="product-meta">
             <div class="product-meta__brand-links">
               <a href="#">سامسونگ</a>
+              <span>/</span>
               <a href="#">گوشی موبایل سامسونگ</a>
             </div>
 
