@@ -1,57 +1,157 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>صفحه محصول آموزشی دیجی‌کالا</title>
-  </head>
-  <body>
-  <main class="page">
-    <section class="product-page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digikala Product Clone</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="top-banner"></div>
+
+    <div class="header-main">
       <div class="container">
-        <article class="product-card">
-          <header class="product-card__header">
-            <p class="product-card__brand">سامسونگ</p>
-            <h1 class="product-card__title">
-              گوشی موبایل سامسونگ مدل Galaxy S25 FE
-            </h1>
-            <p class="product-card__subtitle">
-              یک پروژه آموزشی برای بازسازی مرحله‌به‌مرحله صفحه محصول
-            </p>
-          </header>
+        <div class="header-main__right">
+          <a href="#" class="logo">دیجی‌کالا</a>
 
-          <div class="product-card__content">
-            <div class="product-card__summary">
-              <h2 class="section-title">خلاصه محصول</h2>
-              <p class="product-card__text">
-                در این پروژه قرار است ساختار یک صفحه محصول واقعی را با HTML و CSS
-                به صورت قدم‌به‌قدم پیاده‌سازی کنم.
-              </p>
-            </div>
-
-            <div class="product-card__features">
-              <h2 class="section-title">ویژگی‌های مهم</h2>
-
-              <ul class="feature-list">
-                <li class="feature-list__item">حافظه داخلی: 256 گیگابایت</li>
-                <li class="feature-list__item">رم: 8 گیگابایت</li>
-                <li class="feature-list__item">دو سیم‌کارت</li>
-                <li class="feature-list__item">ساخت ویتنام</li>
-              </ul>
-            </div>
+          <div class="search-box">
+            <input type="text" class="search-box__input" placeholder="جستجو" />
           </div>
+        </div>
 
-          <div class="product-benefits">
-            <div class="product-benefits__item">ارسال سریع</div>
-            <div class="product-benefits__item">پشتیبانی 24 ساعته</div>
-            <div class="product-benefits__item">امکان پرداخت در محل</div>
-            <div class="product-benefits__item">7 روز ضمانت بازگشت</div>
-            <div class="product-benefits__item">ضمانت اصل بودن کالا</div>
-          </div>
-        </article>
+        <div class="header-main__left">
+          <button class="login-btn">ورود | ثبت‌نام</button>
+          <button class="cart-btn">سبد</button>
+        </div>
       </div>
-    </section>
+    </div>
+
+    <div class="header-nav">
+      <div class="container">
+        <nav class="main-nav">
+          <button class="menu-btn">دسته‌بندی کالاها</button>
+
+          <ul class="main-nav__list">
+            <li><a href="#">شگفت‌انگیزها</a></li>
+            <li><a href="#">سوپرمارکت</a></li>
+            <li><a href="#">طلای دیجیتال</a></li>
+            <li><a href="#">پرفروش‌ترین‌ها</a></li>
+            <li><a href="#">سوالی دارید؟</a></li>
+            <li><a href="#">در دیجی‌کالا بفروشید!</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="container">
+      <section class="breadcrumb">
+        <a href="#">دیجی‌کالا</a>
+        <span>/</span>
+        <a href="#">موبایل</a>
+        <span>/</span>
+        <a href="#">گوشی موبایل</a>
+      </section>
+
+      <section class="product-main">
+        <section class="product-content">
+          <div class="product-meta">
+            <div class="product-meta__brand-links">
+              <a href="#">سامسونگ</a>
+              <a href="#">گوشی موبایل سامسونگ</a>
+            </div>
+
+            <h1 class="product-title">
+              گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256
+              گیگابایت و رم 8 گیگابایت - ویتنام
+            </h1>
+
+            <p class="product-title-en">
+              Samsung Galaxy S25 FE Dual SIM Storage 256GB And 8GB Mobile
+              Phone - Vietnam
+            </p>
+          </div>
+
+          <div class="product-rating-row"></div>
+
+          <div class="product-body">
+            <aside class="purchase-sidebar">
+              <div class="purchase-card">
+                <div class="purchase-card__seller">فروشنده</div>
+                <div class="purchase-card__price">۹۷,۲۰۰,۰۰۰ تومان</div>
+                <button class="purchase-card__button">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </aside>
+
+            <section class="product-details">
+              <div class="product-color-box">
+                <h2 class="product-section-title">رنگ: مشکی</h2>
+
+                <div class="color-options">
+                  <button class="color-dot"></button>
+                  <button class="color-dot"></button>
+                  <button class="color-dot color-dot--active"></button>
+                </div>
+              </div>
+
+              <div class="insurance-box">
+                <h2 class="product-section-title">بیمه</h2>
+                <div class="insurance-card"></div>
+              </div>
+
+              <div class="feature-box">
+                <h2 class="product-section-title">ویژگی‌ها</h2>
+
+                <div class="feature-grid">
+                  <div class="feature-item">فناوری صفحه نمایش</div>
+                  <div class="feature-item">نسخه سیستم عامل</div>
+                  <div class="feature-item">رزولوشن دوربین اصلی</div>
+                  <div class="feature-item">اندازه</div>
+                </div>
+
+                <button class="more-features-btn">مشاهده همه ویژگی‌ها</button>
+              </div>
+
+              <div class="product-warning-text"></div>
+
+              <div class="service-boxes">
+                <div class="service-card"></div>
+                <div class="service-card"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="product-gallery">
+          <div class="gallery-main-image"></div>
+
+          <div class="gallery-thumbs">
+            <button class="gallery-thumb"></button>
+            <button class="gallery-thumb"></button>
+            <button class="gallery-thumb"></button>
+            <button class="gallery-thumb"></button>
+            <button class="gallery-thumb"></button>
+          </div>
+        </section>
+      </section>
+
+      <section class="product-benefits">
+        <div class="product-benefit">ضمانت اصل بودن کالا</div>
+        <div class="product-benefit">هفت روز ضمانت بازگشت کالا</div>
+        <div class="product-benefit">امکان پرداخت در محل</div>
+        <div class="product-benefit">۷ روز هفته، ۲۴ ساعته</div>
+        <div class="product-benefit">امکان تحویل اکسپرس</div>
+      </section>
+    </div>
   </main>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
