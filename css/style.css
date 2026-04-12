@@ -53,7 +53,14 @@ body {
 }
 
 .product-card__content {
+  display: flex;
+  gap: 24px;
   margin-bottom: 32px;
+}
+
+.product-card__summary,
+.product-card__features {
+  flex: 1;
 }
 
 .section-title {
@@ -62,7 +69,17 @@ body {
 }
 
 .product-card__summary {
-  margin-bottom: 24px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+}
+
+.product-card__features {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 12px;
 }
 
 .product-card__text {
@@ -80,8 +97,13 @@ body {
   font-size: 16px;
 }
 
+.feature-list__item:last-child {
+  border-bottom: none;
+}
+
 .product-benefits {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
 }
 
@@ -92,4 +114,5 @@ body {
   padding: 14px;
   text-align: center;
   font-size: 14px;
+  line-height: 1.8;
 }
