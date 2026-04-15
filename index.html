@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digikala Product Clone</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -28,18 +29,18 @@
         </div>
 
         <div class="header-main__left">
-          <button class="icon-btn">🛒</button>
-          <button class="login-btn">ورود | ثبت‌نام</button>
-          <button class="icon-btn">🔔</button>
+          <button class="icon-btn" type="button">🛒</button>
+          <button class="login-btn" type="button">ورود | ثبت‌نام</button>
+          <button class="icon-btn" type="button">🔔</button>
         </div>
       </div>
     </div>
 
     <div class="header-nav">
       <div class="container">
-        <div class="main-nav">
+        <nav class="main-nav">
           <div class="main-nav__right">
-            <button class="menu-btn">دسته‌بندی کالاها ☰</button>
+            <button class="menu-btn" type="button">☰ دسته‌بندی کالاها</button>
 
             <ul class="main-nav__list">
               <li><a href="#">شگفت‌انگیزها</a></li>
@@ -51,8 +52,8 @@
             </ul>
           </div>
 
-          <button class="city-btn">شهر خود را انتخاب کنید</button>
-        </div>
+          <button class="city-btn" type="button">📍 شهر خود را انتخاب کنید</button>
+        </nav>
       </div>
     </div>
   </header>
@@ -69,32 +70,48 @@
 
       <section class="product-main">
         <section class="product-content">
-          <div class="product-meta">
-            <div class="product-meta__brand-links">
+          <div class="mb-6">
+            <div class="mb-4 flex items-center gap-3 text-sm text-cyan-500">
               <a href="#">سامسونگ</a>
-              <span>/</span>
+              <span class="text-gray-300">/</span>
               <a href="#">گوشی موبایل سامسونگ</a>
             </div>
 
-            <h1 class="product-title">
-              گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256
-              گیگابایت و رم 8 گیگابایت - ویتنام
+            <h1 class="mb-3 text-[28px] font-semibold leading-[1.9] text-gray-900">
+              گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256 گیگابایت و رم
+              8 گیگابایت - ویتنام
             </h1>
 
-            <p class="product-title-en">
-              Samsung Galaxy S25 FE Dual SIM Storage 256GB And 8GB Mobile
-              Phone - Vietnam
+            <p class="mb-5 text-sm text-gray-400">
+              Samsung Galaxy S25 FE Dual SIM Storage 256GB And 8GB Mobile Phone -
+              Vietnam
             </p>
-          </div>
 
-          <div class="product-rating-row"></div>
+            <div class="flex items-center gap-4 border-b border-gray-100 pb-4 text-sm">
+              <div class="flex items-center gap-1 text-gray-700">
+                <span class="font-bold text-green-600">4.4</span>
+                <span class="text-gray-300">★</span>
+              </div>
+
+              <span class="text-gray-300">|</span>
+
+              <button type="button" class="text-cyan-500">
+                18 دیدگاه کاربران
+              </button>
+
+              <span class="text-gray-300">|</span>
+
+              <span class="text-gray-500">۸۶٪ رضایت از کالا</span>
+            </div>
+          </div>
 
           <div class="product-body">
             <aside class="purchase-sidebar">
               <div class="purchase-card">
                 <div class="purchase-card__seller">فروشنده</div>
                 <div class="purchase-card__price">۹۷,۲۰۰,۰۰۰ تومان</div>
-                <button class="purchase-card__button">
+
+                <button class="purchase-card__button" type="button">
                   افزودن به سبد خرید
                 </button>
               </div>
@@ -105,9 +122,9 @@
                 <h2 class="product-section-title">رنگ: مشکی</h2>
 
                 <div class="color-options">
-                  <button class="color-dot"></button>
-                  <button class="color-dot"></button>
-                  <button class="color-dot color-dot--active"></button>
+                  <button class="color-dot" type="button"></button>
+                  <button class="color-dot" type="button"></button>
+                  <button class="color-dot color-dot--active" type="button"></button>
                 </div>
               </div>
 
@@ -126,7 +143,9 @@
                   <div class="feature-item">اندازه</div>
                 </div>
 
-                <button class="more-features-btn">مشاهده همه ویژگی‌ها</button>
+                <button class="more-features-btn" type="button">
+                  مشاهده همه ویژگی‌ها
+                </button>
               </div>
 
               <div class="product-warning-text"></div>
@@ -143,11 +162,11 @@
           <div class="gallery-main-image"></div>
 
           <div class="gallery-thumbs">
-            <button class="gallery-thumb"></button>
-            <button class="gallery-thumb"></button>
-            <button class="gallery-thumb"></button>
-            <button class="gallery-thumb"></button>
-            <button class="gallery-thumb"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
           </div>
         </section>
       </section>
