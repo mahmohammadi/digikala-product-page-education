@@ -1,9 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "BYekan";
+  src: url("../assets/fonts/BYekan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "BYekan";
   background-color: #f3f3f3;
   color: #222;
 }
@@ -255,12 +260,6 @@ input {
   margin-bottom: 24px;
 }
 
-.product-section-title {
-  margin-bottom: 16px;
-  font-size: 18px;
-  margin-top: 16px;
-}
-
 .color-options {
   display: flex;
   gap: 12px;
@@ -284,14 +283,7 @@ input {
 }
 
 .color-dot--active {
-  box-shadow: 0 0 0 2px #19bfd3;
-}
-
-.insurance-card {
-  height: 72px;
-  border: 1px solid #e0e0e2;
-  border-radius: 12px;
-  background-color: #fafafa;
+  box-shadow: 0 0 0 3px cadetblue;
 }
 
 .feature-grid {
