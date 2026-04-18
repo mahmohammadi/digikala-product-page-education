@@ -7,6 +7,7 @@
   <title>Digikala Product Education</title>
   <link rel="stylesheet" href="./css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./js/tailwind.config.js"></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
               <div class="mb-5 flex flex-wrap items-center gap-2 border-b border-gray-100 pb-4 text-sm">
                 <div class="flex items-center gap-1">
                   <span>⭐</span>
-                  <span class="font-semibold">4.6</span>
+                  <span>۴.۶</span>
                   <span class="whitespace-nowrap text-gray-300">(امتیاز ۱۴۰۸ خریدار)</span>
                 </div>
 
@@ -139,9 +140,9 @@
                     <div class="flex w-12 items-center justify-center border-l border-gray-200">
                       <input type="checkbox" class="h-4 w-4 cursor-pointer border-8" />
                     </div>
-                    <div class="flex flex-1 items-center justify-between px-2 py-2">
+                    <div class="flex flex-1 items-end justify-between px-2 py-2">
                       <div>
-                        <p class="mb-2 text-md">
+                        <p class="mb-2">
                           بیمه تجهیزات دیجیتال - بیمه سامان
                         </p>
                         <div class="flex items-center gap-2 text-md">
@@ -153,57 +154,132 @@
                           <span class="text-xs text-gray-500">تومان</span>
                         </div>
                       </div>
-                      <a href="#" class="text-sm text-[#19bfd3] mt-10">جزئیات ◀️</a>
+                      <a href="#" class="text-sm text-[#19bfd3]">جزئیات
+                        <span>≻</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="feature-box">
-                <h2 class="product-section-title">ویژگی‌ها</h2>
+              <div class="mb-6">
+                <h2 class="mb-4 text-lg font-semibold">ویژگی‌ها</h2>
 
-                <div class="feature-grid">
-                  <div class="feature-item">فناوری صفحه نمایش</div>
-                  <div class="feature-item">نسخه سیستم عامل</div>
-                  <div class="feature-item">رزولوشن دوربین اصلی</div>
-                  <div class="feature-item">اندازه</div>
+                <div class="grid grid-cols-3 gap-3">
+                  <div class="rounded-xl bg-gray-100 px-4 py-2">
+                    <p class="mb-1 text-sm text-gray-500">فناوری صفحه نمایش</p>
+                    <p class="text-[14px] font-semibold text-gray-800">Dynamic LTPO AMOLED 2X</p>
+                  </div>
+                  <div class="rounded-xl bg-gray-100 px-4 py-2">
+                    <p class="mb-1 text-sm text-gray-500">نسخه سیستم عامل</p>
+                    <p class="text-[14px] font-semibold text-gray-800">Android 16</p>
+                  </div>
+                  <div class="rounded-xl bg-gray-100 px-4 py-3">
+                    <p class="mb-1 text-sm text-gray-500">رزولوشن دوربین اصلی</p>
+                    <p class="text-[14px] font-semibold text-gray-800">50 مگاپیکسل</p>
+                  </div>
+                  <div class="col-start-1 rounded-xl bg-gray-100 px-4 py-3">
+                    <p class="mb-1 text-sm text-gray-500">اندازه</p>
+                    <p class="text-[14px] font-semibold text-gray-800">6.7</p>
+                  </div>
                 </div>
 
-                <button class="more-features-btn" type="button">
-                  مشاهده همه ویژگی‌ها
-                </button>
+                <div class="mt-4 flex items-center gap-4">
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                  <button type="button"
+                    class="cursor-pointer items-center flex gap-2 rounded-xl border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800">
+                    <span>مشاهده همه ویژگی‌ها</span>
+                    <span>≻</span>
+                  </button>
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                </div>
               </div>
 
-              <div class="product-warning-text"></div>
-
-              <div class="service-boxes">
-                <div class="service-card"></div>
-                <div class="service-card"></div>
+              <div class="flex">
+                <div class="ml-1">ℹ️</div>
+                <div class="flex mb-6 leading-6 text-gray-500">
+                  امکان برگشت کالا در گروه موبایل با دلیل «انصراف از خرید» تنها در صورتی مورد قبول است که پلمب کالا باز
+                  نشده باشد.
+                  تمام گوشی‌های دیجی‌کالا ضمانت رجیستری دارند. در صورت وجود مشکل رجیستری، می‌توانید بعد از مهلت قانونی
+                  ۳۰
+                  روزه،
+                  گوشی خریداری‌شده را مرجوع کنید.
+                </div>
               </div>
-            </section>
+
+              <div class="mb-4 rounded-xl border border-gray-200">
+                <div>
+                  <div>
+                    <div class="mb-4 flex p-4 pb-0">
+                      <span class="text-3xl text-fuchsia-500 ml-3">✦</span>
+                      <h3 class="font-semibold text-fuchsia-500">
+                        ارسال <span class="text-lg">رایگان</span> سفارش‌ها برای اعضای پلاس
+                      </h3>
+                    </div>
+                    <ul class="space-y-2 text-sm leading-5 text-gray-500 p-5 py-0">
+                      <li>
+                        <span class="text-fuchsia-500 ml-3">•</span>
+                        <span>۴ ارسال رایگان عادی</span>
+                      </li>
+                      <li>
+                        <span class="text-fuchsia-500 ml-3">•</span>
+                        <span>۲ ارسال سوپرمارکتی</span>
+                      </li>
+                      <li>
+                        <span class="text-fuchsia-500 ml-3">•</span>
+                        <span>۳ ارسال رایگان ۴۵ دقیقه‌ای</span>
+                      </li>
+                      <li>
+                        <span class="text-fuchsia-500 ml-3">•</span>
+                        <span>پشتیبانی اختصاصی</span>
+                      </li>
+                      <li>
+                        <span class="text-fuchsia-500 ml-3">•</span>
+                        <span>ارسال سریع و رایگان دیجی‌کالا (فقط تهران و کرج)</span>
+                      </li>
+                    </ul>
+
+                    <div class="flex justify-between">
+                      <div class="flex items-center p-3">
+                        <a href="#" class="text-[15px] font-semibold text-cyan-500">
+                          خرید اشتراک
+                          <span>≻</span>
+                        </a>
+                      </div>
+
+                      <div class="p-0 items-end">
+                        <img src="./assets/images/free-delivery.svg" alt="ارسال رایگان"
+                          class="h-14 w-auto object-contain" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
+    </div>
+    </section>
 
-        <section class="product-gallery">
-          <div class="gallery-main-image"></div>
+    <section class="product-gallery">
+      <div class="gallery-main-image"></div>
 
-          <div class="gallery-thumbs">
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-          </div>
-        </section>
-      </section>
+      <div class="gallery-thumbs">
+        <button class="gallery-thumb" type="button"></button>
+        <button class="gallery-thumb" type="button"></button>
+        <button class="gallery-thumb" type="button"></button>
+        <button class="gallery-thumb" type="button"></button>
+        <button class="gallery-thumb" type="button"></button>
+      </div>
+    </section>
+    </section>
 
-      <section class="product-benefits">
-        <div class="product-benefit">ضمانت اصل بودن کالا</div>
-        <div class="product-benefit">هفت روز ضمانت بازگشت کالا</div>
-        <div class="product-benefit">امکان پرداخت در محل</div>
-        <div class="product-benefit">۷ روز هفته، ۲۴ ساعته</div>
-        <div class="product-benefit">امکان تحویل اکسپرس</div>
-      </section>
+    <section class="product-benefits">
+      <div class="product-benefit">ضمانت اصل بودن کالا</div>
+      <div class="product-benefit">هفت روز ضمانت بازگشت کالا</div>
+      <div class="product-benefit">امکان پرداخت در محل</div>
+      <div class="product-benefit">۷ روز هفته، ۲۴ ساعته</div>
+      <div class="product-benefit">امکان تحویل اکسپرس</div>
+    </section>
     </div>
   </main>
 

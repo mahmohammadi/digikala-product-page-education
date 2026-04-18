@@ -2,13 +2,28 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "BYekan";
-  src: url("../assets/fonts/BYekan.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "IRANYekan";
+  src: url("../assets/fonts/iranyekanwebregular.woff") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../assets/fonts/iranyekanwebmedium.woff") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  /* src: url("assets/fonts/iranyekanwebmedium.woff") format("truetype"); */
+  src: url("../assets/fonts/iranyekanwebextrabold.woff") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 body {
-  font-family: "BYekan";
+  font-family: "IRANYekan";
   background-color: #f3f3f3;
   color: #222;
 }
