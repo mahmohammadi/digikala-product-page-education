@@ -69,7 +69,17 @@
         <a href="#">گوشی موبایل</a>
       </section>
 
-      <section class="product-main">
+      <section class="flex gap-1">
+        <section class="product-gallery w-220">
+          <div class="gallery-main-image"></div>
+          <div class="gallery-thumbs">
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+            <button class="gallery-thumb" type="button"></button>
+          </div>
+        </section>
         <section class="product-content">
           <div class="mb-6">
             <div class="mb-4 flex items-center gap-3 text-sm text-cyan-500">
@@ -85,16 +95,7 @@
           </div>
 
           <div class="product-body">
-            <aside class="purchase-sidebar">
-              <div class="purchase-card">
-                <div class="purchase-card__seller">فروشنده</div>
-                <div class="purchase-card__price">۹۷,۲۰۰,۰۰۰ تومان</div>
 
-                <button class="purchase-card__button" type="button">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-            </aside>
 
             <section class="product-details">
               <p class="mb-4 text-xs text-gray-400">
@@ -155,7 +156,7 @@
                         </div>
                       </div>
                       <a href="#" class="text-sm text-[#19bfd3]">جزئیات
-                        <span>≻</span>
+                        <span>›</span>
                       </a>
                     </div>
                   </div>
@@ -189,7 +190,7 @@
                   <button type="button"
                     class="cursor-pointer items-center flex gap-2 rounded-xl border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800">
                     <span>مشاهده همه ویژگی‌ها</span>
-                    <span>≻</span>
+                    <span>›</span>
                   </button>
                   <div class="h-px flex-1 bg-gray-200"></div>
                 </div>
@@ -243,7 +244,7 @@
                       <div class="flex items-center p-4 mr-7">
                         <a href="#" class="text-[15px] font-semibold text-cyan-500">
                           خرید اشتراک
-                          <span class="text-[15px] font-semibold text-cyan-500">≻</span>
+                          <span class="text-[15px] font-semibold text-cyan-500">›</span>
                         </a>
                       </div>
 
@@ -258,13 +259,13 @@
               <div class="mb-4 rounded-xl border border-gray-200">
                 <div class="mb-4 flex p-4 pb-0 justify-between">
                   <div class="flex">
-                  <span class="text-2xl text-fuchsia-500 ml-4">𝑓</span>
-                  <h3 class="font-semibold">
-                   خرید این کالا با تسهیلات دیجی‌پی
-                  </h3>
+                    <span class="text-2xl text-fuchsia-500 ml-4">𝑓</span>
+                    <h3 class="font-semibold">
+                      خرید این کالا با تسهیلات دیجی‌پی
+                    </h3>
                   </div>
                   <div>
-                    <span class="text-[15px] font-semibold text-cyan-500">≻</span>
+                    <span class="text-[15px] font-semibold text-cyan-500">›</span>
                   </div>
                 </div>
                 <ul class="space-y-2 text-sm leading-5 text-gray-500 px-5 pb-5">
@@ -279,27 +280,114 @@
                 </ul>
               </div>
             </section>
-        </section>
-        <section class="product-gallery">
-          <div class="gallery-main-image"></div>
-          <div class="gallery-thumbs">
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-            <button class="gallery-thumb" type="button"></button>
-          </div>
+            <aside class="relative">
+              <div class="sticky top-4 space-y-2">
+                <div class="rounded-xl border border-gray-200 bg-gray-100 p-5">
+                  <div class="mb-4 flex items-center justify-between">
+                    <h3 class="text-lg font-bold">فروشنده</h3>
+                    <a href="#" class="text-xs text-cyan-500">۵ فروشنده دیگر</a>
+                  </div>
+
+                  <div class="mb-3 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <span class="text-3xl text-red-500">Θ</span>
+                      <span>دیجی‌کالا</span>
+                    </div>
+                  </div>
+
+                  <div class="mb-4 flex items-center gap-2 text-xs">
+                    <span class="text-amber-500">۸۰٪</span>
+                    <span class="text-gray-500">رضایت از کالا</span>
+                    <span class="text-gray-300">|</span>
+                    <span class="text-green-600">عملکرد عالی</span>
+                  </div>
+
+                  <div class="mb-4 h-px bg-gray-200"></div>
+
+                  <div class="mb-3 flex items-end justify-end gap-1">
+                    <span class="text-xl font-bold">۹۵,۶۹۹,۰۰۰</span>
+                    <span class="text-sm">تومان</span>
+                  </div>
+
+                  <div class="mb-4 text-xs text-red-800">
+                    <span class="text-xl">💯</span>
+                    ۵۰۰+ نفر، ۲+ بار این کالا را خریدند
+                  </div>
+
+                  <button class="mb-4 py-3 w-full rounded-lg bg-[#ef4056] text-white" type="button">
+                    افزودن به سبد خرید
+                  </button>
+
+                  <div class="mb-4 flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-2">
+                      <span>🛡️</span>
+                      <span>گارانتی ۱۸ ماهه دیجی‌کالا سرویس</span>
+                    </div>
+                  </div>
+
+                  <div class="mb-2 h-px bg-gray-200"></div>
+
+                  <div class="mb-4">
+                    <div class="mb-4 flex justify-between items-center text-xs font-bold">
+                      <span><span>💾</span> روش‌ها و هزینه‌های ارسال</span>
+                      <span class="text-lg">›</span>
+                    </div>
+
+                    <ul class="space-y-2 text-xs text-gray-500">
+                      <li>
+                        <span class="text-cyan-500 ml-3">•</span>
+                        <span>توسط دیجی‌کالا</span>
+                      </li>
+                      <li>
+                        <span class="text-cyan-500 ml-3">•</span>
+                        <span>ارسال سریع دیجی‌کالا</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="mb-4 h-px bg-gray-200"></div>
+
+                  <div class="mb-4">
+                    <div class="mb-3 flex items-center text-xs font-bold text-gray-700">
+                      <span class="text-fuchsia-500 text-2xl ml-1">✦</span>
+                      <span>ویژه اعضای پلاس</span>
+                    </div>
+                    <ul>
+                      <li class="text-xs text-gray-500 whitespace-nowrap">
+                        <span class="text-cyan-500 ml-3">•</span>
+                        ارسال سریع و رایگان دیجی‌کالا (فقط تهران و کرج)
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="mb-4 h-px bg-gray-200"></div>
+
+                  <div class="flex items-center text-xs font-bold gap-2">
+                    <span>🪙</span>
+                    <span class="font-bold">۱۵۰ امتیاز دیجی‌کلاب</span>
+                    <span>ℹ️</span>
+                  </div>
+                </div>
+
+                <div
+                  class="rounded-xl border border-gray-200 bg-white px-3 py-3 text-[14px] text-gray-700 whitespace-nowrap">
+                  <div class="flex items-center justify-between gap-2">
+                    <span>ℹ️</span>
+                    <span class="flex-1 text-center">فرآیند قیمت‌گذاری و نظارت بر قیمت</span>
+                    <span>›</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
         </section>
       </section>
-    </div>
-    </section>
-    <section class="product-benefits">
-      <div class="product-benefit">ضمانت اصل بودن کالا</div>
-      <div class="product-benefit">هفت روز ضمانت بازگشت کالا</div>
-      <div class="product-benefit">امکان پرداخت در محل</div>
-      <div class="product-benefit">۷ روز هفته، ۲۴ ساعته</div>
-      <div class="product-benefit">امکان تحویل اکسپرس</div>
-    </section>
+      <section class="product-benefits">
+        <div class="product-benefit">ضمانت اصل بودن کالا</div>
+        <div class="product-benefit">هفت روز ضمانت بازگشت کالا</div>
+        <div class="product-benefit">امکان پرداخت در محل</div>
+        <div class="product-benefit">۷ روز هفته، ۲۴ ساعته</div>
+        <div class="product-benefit">امکان تحویل اکسپرس</div>
+      </section>
     </div>
   </main>
 
