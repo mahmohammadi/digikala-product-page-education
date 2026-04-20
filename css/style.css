@@ -38,10 +38,10 @@ input {
   font: inherit;
 } */
 
-.container {
+ .container {
   width: min(100% - 32px, 1600px);
   margin-inline: auto;
-}
+} 
 
 /* =========================
    Header
